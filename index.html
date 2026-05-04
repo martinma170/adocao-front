@@ -10,7 +10,10 @@
 </head>
 <body>
     <header id="inicio">
-        <h1> Adote o seu AUmigo aqui! </h1>
+        <div class="topo"></div>
+
+
+        <h1> Adote o seu AMIGO aqui! </h1>
         <nav>
             <a href="#inicio">Início</a>
             <a href="#pets">Pets</a>
@@ -18,50 +21,86 @@
         </nav>
     </header>
 
-   
-    <section class="hero">
-        <h1> Escolha o Pet que você mais se apaixonou! </h1>
-        <p> Adote um Pet e transforme a sua vida! </p> 
+
+    <section class="faixa-apresentacao">
+        <div class="texto-apresentacao">
+                <h1 class="logo"> 
+                        <img src="imagens/nome-petfinderbr.png" alt="Logo de Adoção de Animais">
+                </h1>
+
+                <h2> Centro de adoção</h2>
+
+                <p> Somos uma iniciativa privada dedicada a aproximar animais resgatados, vindos de ONGs e protetores independentes parceiros, de pessoas e famílias comprometidas com a adoção consciente. Nosso papel é facilitar esse encontro de forma segura e responsável. Não somos uma ONG e não comercializamos animais — promovemos apenas a adoção ética e o bem-estar animal.
+                </p>
+        </div>
+
+        <div class="imagem">
+                <img src="imagens/cachorro-mulher.jpg" alt="Imagem de Adoção de Animais">
+        </div>
+
+
+       
     </section>
 
     
     <section class="pets" id="pets">
         <h2> PETS À SUA ESPERA </h2>
+        
+<div class ="filtros">
+        <div class="faixa-info">
+        </div>
+        <input type="text" id=""busca" placeholder="Buscar por nome ou características...">
+
+        <select id="filtro-especie">
+            <option value="">Todos</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+        </select>
+
+        <select id ="filtro-idade">
+            <option value="">Todas</option>
+            <option value="filhote">Filhote (0-1 ano)</option>
+            <option value="adulto">Adulto (1-7 anos)</option>
+            <option value="idoso">Idoso (7+ anos)</option>
+        </select>
+</div>
+
+
         <div class="cards">
             
 
-        <div class="card">
+        <div class="card" data-nome="Linda" data-especie="cachorro" data-idade="adulto">
             <img src="imagens/tubaina.jpg" alt="Cachorro">
                <h3> Linda </h3>
                 <p> 2 anos • Fêmea Brincalhona </p>
                 <button> Adotar </button>
         </div>
 
-         <div class="card">
+         <div class="card" data-nome="Oreo" data-especie="cachorro" data-idade="adulto">
                 <img src="imagens/341604138827551.jpg" alt="Cachorro">
                 <h3>Oreo</h3>
                 <p>1 ano • Macho Carinhoso </p>
                 <button> Adotar </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Pão de queijo" data-especie="cachorro" data-idade="adulto">
                 <img src="imagens/cachorro4 (2).jpg" alt="Cachorro">
                 <h3>Pão de queijo</h3>
                 <p> 3 anos • Macho Dócil e carinhoso  </p>
                 <button> Adotar </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Sol" data-especie="cachorro" data-idade="adulto">
                 <img src="imagens/cachorro5.jpg" alt="Cachorro">
                 <h3>Sol</h3>
                 <p> 3 anos • Fêmea Amigável  </p>
                 <button> Adotar </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Bidu" data-especie="cachorro" data-idade="adulto">
                 <img src="imagens/cachorro6.jpg" alt="Cachorro">
                 <h3>Bidu</h3>
                 <p> 2 anos • Macho Calmo e carinhoso  </p>
                 <button> Adotar </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Bela" data-especie="cachorro" data-idade="adulto">
                 <img src="imagens/cachorro7.jpg" alt="Cachorro">
                 <h3>Bela</h3>
                 <p> 2 anos • Fêmea Carinhosa  </p>
@@ -70,38 +109,38 @@
 
 
 
-        <div class="card">
+        <div class="card" data-nome="Bela" data-especie="gato" data-idade="adulto">
             <img src="imagens/gato1.jpg" alt="Gato">
                <h3> Bolinha </h3>
                 <p> 1 ano e 7 meses • Fêmea Acanhada </p>
                 <button> Adotar </button>
         </div>
 
-         <div class="card">
+         <div class="card" data-nome="Gelo" data-especie="gato" data-idade="adulto">
                 <img src="imagens/gato2.jpg" alt="Gato">
                 <h3>Gelo</h3>
                 <p>1 ano e 8 meses • Macho Brincalhão </p>
                 <button> Adotar </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Juninho" data-especie="gato" data-idade="adulto">
                 <img src="imagens/gato3.jpg" alt="Gato">
                 <h3>Juninho</h3>
                 <p> 3 anos • Macho Ranzinza ama carinho  </p>
                 <button> Adotar </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Penelope" data-especie="gato" data-idade="adulto">
                 <img src="imagens/gato4.jpg" alt="Gato">
                 <h3>Penelope</h3>
                 <p> 2 anos • Fêmea que AMA carinho  </p>
                 <button> Adotar </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Pão de Mel" data-especie="gato" data-idade="adulto">
                 <img src="imagens/gato5.jpg" alt="Gato">
                 <h3>Pão de Mel</h3>
                 <p> 2 anos • Macho Teimoso e bagunceiro  </p>
                 <button> Adotar </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Bela" data-especie="gato" data-idade="adulto">
                 <img src="imagens/gato6.jpg" alt="Gato">
                 <h3>Bela</h3>
                 <p> 1 ano • Fêmea sociavél e atirada  </p>
