@@ -10,16 +10,17 @@ body {
   min-height:100vh;
   font-family: 'Fredoka', sans-serif;
   background-color: #dbd1ba;
-  text-align: 45px;
   margin: 0;
+  text-align: 45px
 }
 
 #inicio {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #dbd1ba;
+  background-color: #d88147;
   color: white;
+    font-size: 20px;
   padding: 20px 40px;
   position: relative;
   height: 100px;
@@ -42,67 +43,65 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
+
   background: linear-gradient(135deg, #7b4b87, #a86db3);
   color: #ffffff;
 
-  padding: 40px;
-  border-radius: 20px;
-  margin: 20px ;
+  padding: 60px;
+  border-radius: 25px;
+  width: 95%;
+  max-width: 1800px;
+  margin: 40px auto;
 
-gap: 30px;
+  gap: 50px;
 
-box-shadow: 0 10px 20px rgba(123, 75, 135, 0.5);
-transition: transform 0.7s;
+  box-shadow: 0 10px 25px rgba(123, 75, 135, 0.4);
 }
+
 .faixa-apresentacao:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(123, 75, 135, 0.7);
 }
 
 .texto-apresentacao {
-  max-width: 500px;
-  text-align: left;          
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;   .texto-apresentacao {
-  max-width: 500px;
-  text-align: left;          /* 👈 garante alinhamento à esquerda */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;   /* 👈 alinha tudo à esquerda */
-}
+  align-items: flex-start;
 }
 
 .texto-apresentacao h2 {
-  font-size: 28px;
+  font-size: 40px;
   font-family: 'Courier New', Courier, monospace;
-  color: #611b5b;
-  margin: 0 0 10px 0;
-  max-width: 300px;
-  text-align: left;
-
+  color: #4b0d4f;
+  margin-bottom: 45px;
 }
 
 .texto-apresentacao p {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.6;
-  color: #ccc2bc;
-    margin-bottom: 0 AUTO;
-  max-width: 600px;
-  text-align: left;
-
+  color: #f5f5f5;
+  max-width: 900px;
+  margin-bottom: 10px;
 }
 
 .imagem img {
-    width: 300px;
-    border-radius: 10px;
+  width: 560px;
+  border-radius: 20px;
+  margin-right: 45px;
+  object-fit: cover;
+}
+.logo {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  margin-top: -130px;
 }
 
+
 .logo img {
-  width: 140px;  
-  height: auto;
-  margin-bottom: 10px; 
+  width: 300px;
+  margin-bottom: -230px;
 }
 
 .filtros {
@@ -137,15 +136,15 @@ header {
   padding: 30px;
   color: #ce5708;
 }
-.hero {
+.topo {
   padding: 60px 20px;
 
 }
-.hero h1 {
-  font-size: 50px;
+.topo h1 {
+  font-size: 20px;
   color: #f0670c;
 }
-.hero p {
+.topo p {
   font-size: 35px;
   color: #650e6d;
   margin-bottom: 150px;
@@ -156,7 +155,7 @@ header {
 
 }
 .pets h2 {
-
+  text-align: center;
   font-size: 70px;
   color: #650e6d;             
 }
