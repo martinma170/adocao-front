@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: center;
+  flex-direction: column;
+  min-height:100vh;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #dbd1ba;
+  margin: 0;
+}
+
+.chat-header{
+
+    background-color: #7b4b87;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.chat-header h1{
+
+    margin-bottom: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.chat-header nav{
+
+    margin-top: 10px;
+}
+
+.chat-header a{
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+
+    font-weight: bold;
+}
+
+.chat-container{
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 115px auto;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: 0 0 10px rgba(184, 27, 27, 0);
+}
+
+.chat-messages{
+
+    height: 400px;
+
+    overflow-y: auto;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background-color: #f4f4f4;
+
+    margin-bottom: 20px;
+}
+
+.mensagem{
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border-radius: 12px;
+
+    max-width: 80%;
+}
+
+.usuario{
+
+    background-color: #7d4fff;
+
+    color: white;
+
+    margin-left: auto;
+}
+
+.suporte{
+
+    background-color: #dddddd;
+
+    color: rgb(0, 0, 0);
+}
+
+#chat-form{
+
+    display: flex;
+
+    gap: 10px;
+}
+
+#chat-input{
+
+    flex: 1;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: none;
+
+    font-size: 16px;
+}
+
+#chat-form button{
+
+    background-color: #ff8f25ef;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#chat-form button:hover{
+
+    background-color: #f0811a;
+}
+
+
+
+
+
+
+.footer {
+  background: linear-gradient(135deg, #7b4b87, #5a2d67);
+  color: white;
+
+  padding: 60px 20px 20px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 90px;
+}
+
+.footer-box {
+  max-width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-box h3 {
+  color: #ffb347;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+
+.contato-box {
+  margin-right: 80px;
+}
+
+.contato-box button {
+
+  margin-top: 20px;
+
+  width: 100%;
+
+  max-width: 180px;
+
+  padding: 15px;
+
+  font-size: 20px;
+
+  border: none;
+
+  background-color: #e6661c;
+
+  color: white;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.7s;
+}
+.contato-box button:hover {
+
+  background-color: #e6661c;
+
+  transform: scale(1.05);
+}
+
+
+
+.footer {
+  background: linear-gradient(135deg, #7b4b87, #5a2d67);
+  color: white;
+
+  padding: 60px 20px 20px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  gap: 40px;
+}
+
+.footer-box {
+  max-width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-box h3 {
+  color: #ffb347;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: linear-gradient(135deg, #7b4b87, #5a2d67);
+  color: white;
+
+  padding: 60px 20px 20px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  gap: 40px;
+}
+
+.footer-box {
+  max-width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-box h3 {
+  color: #ffb347;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-box p,
+.footer-box a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 18px;
+
+  transition: 0.3s;
+}
+
+.footer-box a:hover {
+  color: #ff8716;
+  transform: translateX(5px);
+}
+
+.footer-copy {
+  margin-top: 50px;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.2);
+
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        text-align: center;
+    }
+
+    /* HEADER */
+    #inicio {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* FAIXA PRINCIPAL */
+    .faixa-apresentacao {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .imagem img {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* CARDS DOS PETS */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* CHAT */
+    .chat-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    /* LOGIN */
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+}

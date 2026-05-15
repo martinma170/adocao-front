@@ -11,10 +11,13 @@ body {
   height: 100vh;
 }
 
+
 .login-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 80vh;
 }
 
 .login-box {
@@ -75,4 +78,68 @@ body {
   text-align: center;
   text-decoration: none;
   color: #7b4b87;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        text-align: center;
+    }
+
+    /* HEADER */
+    #inicio {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* FAIXA PRINCIPAL */
+    .faixa-apresentacao {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .imagem img {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* CARDS DOS PETS */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* CHAT */
+    .chat-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    /* LOGIN */
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
 }
